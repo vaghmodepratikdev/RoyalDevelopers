@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/contact_stylesheet.css">
+  <link rel="stylesheet" href="css/messagebox.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav id="head">
+    <div class="title">
+      <img class="logo" src="img/logo.jpg">
+      <h3>ROYAL DEVELOPERS</h3>
+    </div>
+    <ul>
+
+      <li><a href="index.html">HOME</a></li>
+
+
+
+      <div class="dropdown">
+        <button class="dropbtn">PROPERTIES</button>
+        <div class="dropdown-content">
+          <li><a href="PopularProperty.html">MOST LIKED PROJECTS</a></li>
+          <li><a href="Future products.html">FUTURE</a></li>
+        </div>
+      </div>
+
+      <li><a href="PostProperty.html">POSTPROPERTY</a></li>
+      <li>
+        <a href="About.html">ABOUT</a>
+      </li>
+      <li>
+        <a class="current" href="#">CONTACT</a>
+      </li>
+      <li><a href="signup.html">SIGNUP</a></li>
+
+    </ul>
+  </nav>
+
+
+  <main>
+    <div class="container">
+        <div id="HomeId">
+
+        </div>
+    </div>
+</main>
+
+
+  <div class="container-contact">
+    <div style="text-align:center">
+      <h2>Contact Us</h2>
+      <p>Swing by for a cup of coffee, or leave us a message:</p>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="img/contact.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <form>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="enter your email">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">India</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer id="footer" class="foot">
+    <section class="footer_div">
+      <div class="footer_address">
+        <h1>
+          Royal@Prop
+        </h1>
+        <br>
+        <Article>
+          <h4>
+            Address:
+          </h4>
+        </Article>
+        <p>
+          Plot No.5, Pyramid Building, Phase 1,Hinjewadi Rajiv Gandhi Infotech Park,<br>
+          Hinjawadi, Pune, Maharashtra 411057, India
+        </p>
+        <br>
+        <p>
+          Toll Free: +1.63.3333.2222
+        </p>
+      </div>
+      <br>
+
+      <div class="footer_connect">
+        <p>
+          GLOBAL PRESENCE : USA | CANADA | INDIA
+        </p>
+
+        <br>
+        CONNECT WITH US
+        <div class="connect">
+          <a href="https://www.facebook.com/">
+            <img src='img/logo-facebook.png' height="30px" width="40px">
+          </a>
+          <a href="https://www.linkedin.com/">
+            <img src='img/logo-linkedin.png' height="30px" width="40px">
+          </a>
+          <a href="https://twitter.com/explore">
+            <img src='img/logo-twitter.png' height="30px" width="40px">
+          </a>
+          <a href="https://www.youtube.com/">
+            <img src='img/logo-youtube.png' height="30px" width="40px">
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </footer>
+  <section>
+    <article>
+      <marquee>
+        <p>
+          Copyright © Royal@Prop 2020. All rights reserved.
+        </p>
+      </marquee>
+    </article>
+  </section>
+
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <!-- Form -->
+      <div class="nb-form">
+        <p class="title">Send a message</p>
+        <img src="" alt="" class="user-icon">
+        <p class="message"></p>
+        <form>
+          <input type="text" name="cpname" placeholder="Name:" required>
+          <input type="email" name="cpemail" placeholder="Email:" required>
+          <input type="tel" name="cpphone" placeholder="Phone:" required>
+          <textarea name="cpmessage" placeholder="Message:" required></textarea>
+          <input type="submit" value="Send message">
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

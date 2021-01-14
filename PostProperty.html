@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/messagebox.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav id="head">
+        <div class="title">
+            <img class="logo" src="img/logo.jpg">
+            <h3>ROYAL DEVELOPERS</h3>
+        </div>
+        <ul>
+
+            <li><a href="index.html">HOME</a></li>
+
+
+
+            <div class="dropdown">
+                <button class="dropbtn">PROPERTIES</button>
+                <div class="dropdown-content">
+                    <li><a href="PopularProperty.html">MOST LIKED PROJECTS</a></li>
+                    <li><a href="Future products.html">FUTURE</a></li>
+                </div>
+            </div>
+
+            <li><a class="current" href="PostProperty.html">POSTPROPERTY</a></li>
+            <li>
+                <a href="About.html">ABOUT</a>
+            </li>
+            <li>
+                <a href="Contact.html">CONTACT</a>
+            </li>
+            <li><a href="signup.html">SIGNUP</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div id="HomeId">
+                <input type="text" id="search_property" style="text-transform:uppercase"
+                    placeholder="Type Location or Project/Society or Keyword">
+                <div id="btn">
+                    <button class="button">Search</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div id=back_img_form>
+        <br>
+
+        <legend class="legends">
+            <h1>Reach out to 15 Lac Buyers & Tenants in just 5 minutes!</h1>
+        </legend>
+        <hr>
+        <br>
+
+        <h1>
+            Personal Information
+        </h1>
+
+
+        <br>
+        <form>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="Owner">Name :</label>
+                        </td>
+                        <td>
+                            <input name="name" type="text" placeholder="Enter Full Name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Owner">Relation to the Property :</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="Owner" name="property" value="male">
+                            <label for="Owner">Owner</label>
+                            <br>
+                            <input type="radio" id="Agent" name="property" value="female">
+                            <label for="Agent">Agent</label>
+                            <br>
+                            <input type="radio" id="Builder" name="property" value="female">
+                            <label for="Builder">Builder</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="List_property">List Property For :</label>
+                        </td>
+                        <td>
+                            <select id="p_For">
+                                <option value="Sell">Sell</option>
+                                <option value="Rent/Lease">Rent/Lease</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="p_Type">Property Type :</label>
+                        </td>
+                        <td>
+                            <select id="p_Type">
+                                <option value="Residential">Residential</option>
+                                <option value="Commercial">Commercial</option>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="A_line1">Address Line 1 * :</label>
+                        </td>
+                        <td>
+                            <input name="Address1" type="text" placeholder="Enter Address" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="A_line2">Address Line 1 * :</label>
+                        </td>
+                        <td>
+                            <input name="Address2" type="text" placeholder="Enter Address" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="city">City * :</label>
+                        </td>
+                        <td>
+                            <input name="city" type="text" placeholder="Enter City" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="p_number">Phone Number * :</label>
+                        </td>
+                        <td>
+                            <input name="p_number" type="text" placeholder="Enter Mobile Number" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="fax">Fax :</label>
+                        </td>
+                        <td>
+                            <input name="fax" type="text" placeholder="Enter Fax" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mail">E-mail * :</label>
+                        </td>
+                        <td>
+                            <input name="fax" type="text" placeholder="ex: myname@example.com" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for=""> How did you hear about us? :</label>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="Residential">Referral</option>
+                                <option value="Commercial"> Internet Search </option>
+                                <option value="Residential"> Internet Advertisement </option>
+                                <option value="Commercial"> Internet Blog </option>
+                                <option value="Residential"> Printed Publication </option>
+                                <option value="Commercial"> Social Media </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <h1>
+                                <legend> Property Information</legend>
+                            </h1>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Date Management to Commence :</label>
+                        </td>
+                        <td>
+                            <input type="date" id="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="p_name">Property Name * :</label>
+                        </td>
+                        <td>
+                            <input name="prop_name" type="text" placeholder="Enter Name of Property" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="A_line1">Address Line 1 * :</label>
+                        </td>
+                        <td>
+                            <input name="Address1" type="text" placeholder="Enter Address" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="A_line2">Address Line 2 * :</label>
+                        </td>
+                        <td>
+                            <input name="Address2" type="text" placeholder="Enter Address" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="city">City * :</label>
+                        </td>
+                        <td>
+                            <input name="city" type="text" placeholder="Enter City" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="city">Postal Code * :</label>
+                        </td>
+                        <td>
+                            <input name="city" type="text" placeholder="Enter Postal Code" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="number">Number of Units * :</label>
+                        </td>
+                        <td>
+                            <input name="number" type="text" placeholder="ex : 300" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="com">Total Commercial Units (if applicable) :</label>
+                        </td>
+                        <td>
+                            <input name="com" type="text" placeholder="ex : 300" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="city">Total Commercial Space in square feet (if applicable) :</label>
+                        </td>
+                        <td>
+                            <input name="city" type="text" placeholder="ex : 300" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="city">Year Built :</label>
+                        </td>
+                        <td>
+                            <input name="Year_Built" type="text" placeholder="Year" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="city">Developer :</label>
+                        </td>
+                        <td>
+                            <input name="developer" type="text" placeholder="Name of Developer" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="city">Condominium Plan Number :</label>
+                        </td>
+                        <td>
+                            <input name="developer" type="text" placeholder="Plan Number" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Owner">Property Type *:</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="r_cc" name="property1">
+                            <label for="Owner">Conventional Condominium</label>
+
+                            <br>
+                            <input type="radio" id="r_bare" name="property1">
+                            <label for="Agent">Bare Land Condominium</label>
+
+                            <br>
+                            <input type="radio" id="r_commercial" name="property1">
+                            <label for="Builder">Commercial</label>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Builder">Property Style * :</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="Duplex" value="Duplex">
+                            <label for="vehicle1"> Duplex</label><br>
+
+                            <input type="checkbox" name="Townhouse" value="Townhouse">
+                            <label for="Townhouse"> Townhouse</label><br>
+
+                            <input type="checkbox" name="Carriage Style" value="Carriage Style">
+                            <label for="Carriage Style"> Carriage Style</label><br>
+
+                            <input type="checkbox" name="Low-rise" value="Low-rise">
+                            <label for="Low-rise"> Low-rise</label><br>
+
+                            <input type="checkbox" name="High-rise" value="High-rise">
+                            <label for="High-rise"> High-rise</label><br>
+
+                            <input type="checkbox" name="Mixed Use" value="Mixed Use">
+                            <label for="Mixed Use"> Mixed Use (Commercial & Residential)</label><br>
+
+                            <input type="checkbox" name="Office Building" value="Office Building">
+                            <label for="Office Building"> Office Building</label><br>
+
+                            <input type="checkbox" name="Shopping" value="Shopping">
+                            <label for="Shopping"> Shopping Mall / Plaza / Common</label><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Builder">Please check all amenities :</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="Pool" value="Pool">
+                            <label for="Pool"> Pool</label><br>
+
+                            <input type="checkbox" name="Gym" value="Gym">
+                            <label for="Gym"> Gym</label><br>
+
+                            <input type="checkbox" name="Sauna / Spa" value="Sauna / Spa">
+                            <label for="Sauna / Spa">Sauna / Spa</label><br>
+
+                            <input type="checkbox" name="Meeting Room" value="Meeting Room">
+                            <label for="Meeting Room"> Meeting Room</label><br>
+
+                            <input type="checkbox" name="Games Room" value="Games Room">
+                            <label for="Games Room"> Games Room</label><br>
+
+                            <input type="checkbox" name="Tennis Court(s)" value="Tennis Court(s)">
+                            <label for="Tennis Court(s)"> Tennis Court(s)</label><br>
+
+                            <input type="checkbox" name="Guest Suite" value="Guest Suite">
+                            <label for="Guest Suite">Guest Suite</label><br>
+
+                            <input type="checkbox" name="Car Wash" value="Car Wash">
+                            <label for="Car Wash"> Car Wash</label><br>
+
+                            <input type="checkbox" name="Common Building / Garage" value="Common Building / Garage">
+                            <label for="Common Building / Garage"> Common Building / Garage</label><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mission">Please provide any additional information or comments:</label>
+                        </td>
+                        <td>
+                            <textarea id="mission" rows="1" cols="50" width="300px" height="150px"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Upload Photo :
+                        </td>
+                        <td>
+                            <input type="file" id="myFile" name="filename">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td>
+                            <input type="submit">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+
+        <br>
+        <br>
+    </div>
+
+
+    <br>
+    <footer id="footer" class="foot">
+        <section class="footer_div">
+            <div class="footer_address">
+                <h1>
+                    Royal@Prop
+                </h1>
+                <br>
+                <Article>
+                    <h4>
+                        Address:
+                    </h4>
+                </Article>
+                <p>
+                    Plot No.5, Pyramid Building, Phase 1,Hinjewadi Rajiv Gandhi Infotech Park,<br>
+                    Hinjawadi, Pune, Maharashtra 411057, India
+                </p>
+                <br>
+                <p>
+                    Toll Free: +1.63.3333.2222
+                </p>
+            </div>
+            <br>
+
+            <div class="footer_connect">
+                <p>
+                    GLOBAL PRESENCE : USA | CANADA | INDIA
+                </p>
+
+                <br>
+                CONNECT WITH US
+                <div class="connect">
+                    <a href="https://www.facebook.com/">
+                        <img src='img/logo-facebook.png' height="30px" width="40px">
+                    </a>
+                    <a href="https://www.linkedin.com/">
+                        <img src='img/logo-linkedin.png' height="30px" width="40px">
+                    </a>
+                    <a href="https://twitter.com/explore">
+                        <img src='img/logo-twitter.png' height="30px" width="40px">
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <img src='img/logo-youtube.png' height="30px" width="40px">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+    <section>
+        <article>
+            <marquee>
+                <p>
+                    Copyright © Royal@Prop 2020. All rights reserved.
+                </p>
+            </marquee>
+        </article>
+    </section>
+
+    </div>
+
+    
+<div class="container">
+    <div class="row">
+        <!-- Form -->
+    <div class="nb-form">
+    <p class="title">Send a message</p>
+    <img src="" alt="" class="user-icon">
+    <p class="message"></p>
+    <form>
+      <input type="text" name="cpname" placeholder="Name:" required>
+      <input type="email" name="cpemail" placeholder="Email:" required>
+      <input type="tel" name="cpphone" placeholder="Phone:" required>
+      <textarea name="cpmessage" placeholder="Message:" required></textarea>
+      <input type="submit" value="Send message">
+    </form>
+  </div>
+    </div>
+</div>
+
+</body>
+
+</html>
